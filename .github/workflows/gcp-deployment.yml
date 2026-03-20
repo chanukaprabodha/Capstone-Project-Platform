@@ -1,0 +1,13 @@
+name: Capstone Project Platform GCP Deployment
+on: push
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: First step of deployment
+            run: echo "Starting GCP deployment process..."
+
+          - name: Second step of deployment
+            run: echo "Finalizing GCP deployment process..."
