@@ -27,9 +27,10 @@ jobs:
           - name: Start the vm-platform-seed
             run: gcloud compute instances start ${{env.VM_NAME}} --zone=${{env.ZONE}}
 
-          - name: Connet with the vm-platform-seed throgh SSH
+          - name: Connect with the vm-platform-seed through SSH
             run: >
-                gcloud compute ssh ${{env.VM_NAME}} --zone=${{env.ZONE}}
-                --command echo "Connected to vm-platform-seed successfully!"
+                gcloud compute ssh ${{env.VM_NAME}} 
+                --zone=${{env.ZONE}}
+                --command='echo "Connected to vm-platform-seed successfully!"'
               
               
