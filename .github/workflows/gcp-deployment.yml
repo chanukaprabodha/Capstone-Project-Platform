@@ -59,7 +59,7 @@ jobs:
 
           - name: Update the instance group with the new image
             run: |
-                  gcloud cloud compute instance-groups managed rolling-action start-update mig-platform \
+                  gcloud compute instance-groups managed rolling-action start-update mig-platform \
                   --region=${{env.REGION}} \
                   --type=proactive \
                   --max-unavailable=3 \
